@@ -245,7 +245,7 @@ function App() {
         }}>
           <h3 style={{ margin: 0, color: '#fff', fontFamily: 'sans-serif' }}>Fragment Shader</h3>
         </div>
-        <div style={{ flex: 1, minHeight: 0, overflow: 'hidden', width: '100%' }}>
+        <div style={{ flex: 1, minHeight: 0, overflow: 'auto', width: '100%' }}>
           <CodeMirror
             value={shaderText}
             onChange={setShaderText}
