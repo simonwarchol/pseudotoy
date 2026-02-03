@@ -211,14 +211,27 @@ function App() {
       height: '100vh', 
       display: 'flex', 
       overflow: 'hidden',
-      flexDirection: 'row',
+      flexDirection: 'column',
       position: 'relative'
     }}>
+      <div style={{
+        padding: '12px 20px',
+        fontSize: '20px',
+        fontWeight: 600,
+        color: '#fff',
+        backgroundColor: '#1a1a1a',
+        borderBottom: '1px solid #333',
+        fontFamily: 'sans-serif',
+        textAlign: 'center'
+      }}>
+        pseudotoy
+      </div>
+      <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'row', overflow: 'hidden' }}>
       <div style={{
         width: '50%',
         flex: 1,
         minWidth: 0,
-        height: '100vh',
+        minHeight: 0,
         display: 'flex',
         flexDirection: 'column',
         backgroundColor: '#1e1e1e',
@@ -293,7 +306,7 @@ function App() {
         width: '50%',
         flex: 1,
         minWidth: 0,
-        height: '100vh',
+        minHeight: 0,
         display: 'flex',
         flexDirection: 'column',
         overflow: 'hidden',
@@ -354,6 +367,7 @@ function App() {
             }}
           />
         </div>
+      </div>
       </div>
     </div>
   )
